@@ -1,5 +1,5 @@
 
-# PHP lions-database-manager
+# PHP lions-software-database-manager
 
 This is a simple library for managing database connections, results pagination and building queries in PHP.
 
@@ -7,12 +7,12 @@ Esta é uma biblioteca simples para gerenciar conexões de banco de dados, pagin
 
 ## Installation
 
-Use [Composer](https://getcomposer.org/) to install lions-database-manager in your project
+Use [Composer](https://getcomposer.org/) to install lions-software-database-manager in your project
 
-Use o [Composer](https://getcomposer.org/) para instalar o lions-database-manager em seu projeto:
+Use o [Composer](https://getcomposer.org/) para instalar o lions-software-database-manager em seu projeto:
 
 ```php
-composer require lions-software/lions-database-manager
+composer require lions-software/lions-software-database-manager
 ```
 
 ## Usage
