@@ -1,5 +1,5 @@
 {
-    "name": "lions-software/lions-database-manager",
+    "name": "lions-software/lions-software-database-manager",
     "description": "A simple library for managing database connections, results pagination and building queries in PHP.",
     "type": "library",
     "license": "MIT",
