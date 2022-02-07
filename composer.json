@@ -1,0 +1,20 @@
+{
+    "name": "lions-software/lions-database-manager",
+    "description": "A simple library for managing database connections, results pagination and building queries in PHP.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lions Software",
+            "email": "developer@lionssoftware.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LionsSoftware\\DatabaseManager\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}
