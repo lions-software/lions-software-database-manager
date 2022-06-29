@@ -5,7 +5,7 @@ namespace LionsSoftware\DatabaseManager;
 use \PDO;
 use \PDOException;
 
-class Database
+class DataBase
 {
 
   /**
@@ -79,18 +79,19 @@ class Database
       switch (self::$db_driver) {
         case 'mysql':
           self::$pdo = new PDO(self::$db_driver . ':host=' . self::$db_host . ';dbname=' . self::$db_name, self::$db_user, self::$db_pass);
+          self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           break;
 
         case 'pgsql':
           self::$pdo = new PDO(self::$db_driver . ':host=' . self::$db_host . ' dbname=' . self::$db_name . ' port=' . self::$db_port . ' user=' . self::$db_user . ' password=' . self::$db_pass);
+          self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           break;
 
         case 'sqlsrv':
           self::$pdo = new PDO(self::$db_driver . ':Server=' . self::$db_host . ';Database=' . self::$db_name, self::$db_user, self::$db_pass);
+          self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           break;
       }
-
-      self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
       die('Connection Error: ' . $e->getMessage());
     }
@@ -100,8 +101,7 @@ class Database
   {
     # Garante uma única instância. Se não existe uma conexão, criamos uma nova.
     if (!self::$pdo) {
-
-      new Database();
+      new DataBase();
     }
     # Retorna a conexão.
     return self::$pdo;
