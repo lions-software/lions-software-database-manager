@@ -38,10 +38,10 @@ $dbPort = 3306;
 $dbDriver = 'mysql';
 
 //CONFIG DATABASE CLASS
-Database::config($dbHost,$dbUser,$dbPass,$dbName, $dbPort, $dbDriver);
+DataBase::config($dbHost,$dbUser,$dbPass,$dbName, $dbPort, $dbDriver);
 
 //CONNECTION INSTANCE
-$objDatabase = Database::Connection();
+$objDatabase = DataBase::Connection();
 
 ```
 
@@ -63,10 +63,10 @@ $dbPort = 3306;
 $dbDriver = 'mysql';
 
 //CONFIG DATABASE CLASS
-Database::config($dbHost,$dbUser,$dbPass,$dbName, $dbPort, $dbDriver);
+DataBase::config($dbHost,$dbUser,$dbPass,$dbName, $dbPort, $dbDriver);
 
 //CONNECTION INSTANCE
-$objDatabase = Database::Connection();
+$objDatabase = DataBase::Connection();
 
 //COUNT TOTAL RESULTS
 $totalResults = $objDatabase->select('id > 10',null,null,'COUNT(*) as total')->fetchObject()->total;
