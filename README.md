@@ -27,7 +27,7 @@ Para utilizar esta biblioteca basta seguir os exemplos abaixo:
 
 require 'vendor/autoload.php';
 
-use LionsSoftware\DatabaseManager\Database;
+use LionsSoftware\DatabaseManager\DataBase;
 
 //DATABASE CREDENTIALS
 $dbHost = 'localhost';
@@ -51,7 +51,7 @@ $objDatabase = Database::Connection();
 
 require 'vendor/autoload.php';
 
-use LionsSoftware\DatabaseManager\Database;
+use LionsSoftware\DatabaseManager\DataBase;
 use LionsSoftware\DatabaseManager\Pagination;
 
 //DATABASE CREDENTIALS
