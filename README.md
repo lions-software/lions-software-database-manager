@@ -21,7 +21,7 @@ To use this library just follow the examples below:
 
 Para utilizar esta biblioteca basta seguir os exemplos abaixo:
 
-#### Database
+#### DataBase
 ```php
 <?php
 
